@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&family=Roboto:wght@300&display=swap');
+
 
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
+    color:rgb(235, 245, 245);
+}
+
+/* Nav Bar */
+header ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2em;
+    font-weight: 400;
+    color:rgb(235, 245, 245);
+    font-family: 'Bai Jamjuree', sans-serif !important;
 }
 
 /* Marquee */
 .marquee {
     display: flex;
     overflow: hidden;
-    height: 40vh;
     user-select: none;
     gap: .2rem;
-    padding-top: 11rem;
-    padding-bottom: 12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .marquee_group {
@@ -27,8 +46,9 @@ body {
 }
 
 .marquee_group span {
-    color:black;
-    font-size: 5vw;
+    /*font-size: 4.75vw;*/
+    /*font-size: clamp(4vw, 4.75px, 4.75vw);*/
+    font-size:4.75vw;
     font-weight:700;
     white-space: nowrap;
     font-family: 'Bai Jamjuree', sans-serif !important;
@@ -43,3 +63,77 @@ body {
     }
   }
 
+
+
+
+
+
+
+
+  
+  /* Primary Content */
+/*
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+  
+.name {
+    grid-column: 2 / span 4;
+    font-size: 4em;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif !important;
+}
+  
+.image1 {
+    grid-column: 8 / span 4;
+    width: 75%;
+    height: auto;
+    box-shadow: 0rem 0rem 4rem rgba (0 0 0 / 35%);
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+  
+.text1 {
+    grid-column: 3 / span 8;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 1.75em 0;
+}
+  
+.image2 {
+    grid-column: 2 / span 5;
+    width: 75%;
+    height: auto;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+
+.image1:hover {
+    transform: translateX(-5%) scale(1.04);
+}
+
+.image2:hover {
+    transform: translateX(5%) scale(1.04);
+}
+  
+.text2 {
+    grid-column: 4 / span 8;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 1.75em 0;
+}
+
+
+@media (min-width: 1300px) {
+    .marquee_group span {
+        font-size: calc(60px + 1vw)
+    }
+}
+*/
