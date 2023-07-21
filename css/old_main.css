@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;700&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:rgb(19, 20, 20);
+}
+
+/* Nav Bar */
+header ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2em;
+    font-weight: 400;
+    color:rgb(19, 20, 20);
+    font-family: 'Bai Jamjuree', sans-serif !important;
+}
+
+/* Intro text */
+
+.intro-text-font {
+    font-size: 4em;
+    font-weight: 400;
+    color:rgb(19, 20, 20);
+    font-family: 'Bai Jamjuree', sans-serif !important;
+}
+
+.intro-text {
+    display:flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-square {
+    width: 120px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #000000; /* Black stroke */
+    border-radius: 5px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Marquee */
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: .2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.marquee_group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .2rem;
+    min-width: 100%;
+    animation: scroll 40s linear infinite;
+}
+
+.marquee_group span {
+    /*font-size: 4.75vw;*/
+    /*font-size: clamp(4vw, 4.75px, 4.75vw);*/
+    font-size:3.0555555556vw;
+    font-weight:700;
+    white-space: nowrap;
+    font-family: 'Bai Jamjuree', sans-serif !important;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 2rem));
+    }
+  }
+
+@keyframes textSwap {
+    0%, 25% { content: "UI/UX"; }
+    26%, 50% { content: "Graphic"; }
+    51%, 75% { content: "Website"; }
+    76%, 100% { content: "Designer"; }
+}  
+
+@media screen and (max-width: 1047px) {
+    .marquee_group span {
+        font-size:32px
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .marquee_group span {
+        font-size:44px
+    }
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Primary Content */
+/*
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+  
+.name {
+    grid-column: 2 / span 4;
+    font-size: 4em;
+    font-weight: 400;
+    font-family: 'Bai Jamjuree', sans-serif !important;
+}
+  
+.image1 {
+    grid-column: 8 / span 4;
+    width: 75%;
+    height: auto;
+    box-shadow: 0rem 0rem 4rem rgba (0 0 0 / 35%);
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+  
+.text1 {
+    grid-column: 3 / span 8;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 1.75em 0;
+}
+  
+.image2 {
+    grid-column: 2 / span 5;
+    width: 75%;
+    height: auto;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+}
+
+.image1:hover {
+    transform: translateX(-5%) scale(1.04);
+}
+
+.image2:hover {
+    transform: translateX(5%) scale(1.04);
+}
+  
+.text2 {
+    grid-column: 4 / span 8;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 1.75em 0;
+}
+
+
+@media (min-width: 1300px) {
+    .marquee_group span {
+        font-size: calc(60px + 1vw)
+    }
+}
+*/
